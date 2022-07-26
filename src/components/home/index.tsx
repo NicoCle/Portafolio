@@ -20,7 +20,7 @@ const Home: FunctionComponent = () => {
     <Flex h="100vh" direction="column" justifyContent="center">
       <Flex direction="column" alignItems="center">
         <Heading
-          fontSize={isPhone ? "2xl" : "3xl"}
+          fontSize={isPhone || isRotate ? "2xl" : "3xl"}
           fontWeight="normal"
           color="green.500"
           as={motion.h2}
@@ -29,7 +29,7 @@ const Home: FunctionComponent = () => {
           Hi, my name is
         </Heading>
         <Heading
-          fontSize={isPhone ? "4xl" : "8xl"}
+          fontSize={isPhone || isRotate ? "4xl" : "8xl"}
           fontWeight="medium"
           color="orange.700"
           as={motion.h2}
@@ -40,7 +40,7 @@ const Home: FunctionComponent = () => {
         </Heading>
         <Heading
           fontWeight="normal"
-          fontSize={isPhone ? "3xl" : "4xl"}
+          fontSize={isPhone || isRotate ? "3xl" : "4xl"}
           textAlign="center"
           color="gray"
           as={motion.h2}
@@ -50,7 +50,7 @@ const Home: FunctionComponent = () => {
           I am a Front-End developer.
         </Heading>
         <Heading
-          fontSize={isPhone ? "lg" : "2xl"}
+          fontSize={isPhone || isRotate ? "lg" : "2xl"}
           maxW={isPhone ? "20rem" : "40rem"}
           color="black"
           padding="1rem 0 2rem"
